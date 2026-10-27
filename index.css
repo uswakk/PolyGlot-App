@@ -39,7 +39,7 @@ img
 }
 
 /**Content**/
-form
+#block-one, #block-two
 {
     border: 4px solid #252F42;
     border-radius: 15px;
@@ -48,6 +48,11 @@ form
     font-family:'Poppins','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #035A9D;
     font-weight: 700;
+}
+
+#block-two
+{
+    display: none;
 }
 
 input[type=text]
@@ -71,6 +76,7 @@ p, .one label
 .three
 {
     display: none;
+    flex-direction: column;
 
 }
 
@@ -82,13 +88,42 @@ button
     width: 200px;
     height:30px;
     color: white;
-    margin: 10px;
+    margin: 10px auto;
     font-weight: 600;
 
 
 }
 
+
 .two label
 {
     color: #333333;
+}
+
+/*Styling of Block two*/
+ h2
+{
+    font-size: 16px;
+    color: #035A9D;
+    font-weight: 700;
+    margin: 20px 0px 0px 15px;
+}
+
+#block-two p
+{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#block-two button
+{
+    margin-bottom: 20px;
+}
+
+/*hover styling*/
+button:hover
+{
+    background-color: #32CD32;
+    cursor: pointer;
 }

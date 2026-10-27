@@ -17,13 +17,14 @@
                     <subtitle>Perfect Translation Every Time </subtitle>
                 </div>
             </div>
-            <form >
+            <div id="block-one">
+            <form id="form">
             <div class="chat-box one">
                 <label for="user-input">Text To Translate &#128071</label>
                 <input type="text" placeholder="Hello, how are you " id="user-input"/>
                 
             </div>
-            <div class="chat-box two">
+            <div class="chat-box two" id="language-options-container">
                 <p >Select Language &#128071</p>
                 <div class="language-options">
                   <input type="radio" id="french" name="language" value="French" checked>
@@ -34,14 +35,23 @@
 
                     <input type="radio" id="arabic" name="language" value="Arabic">
                     <label for="arabic">Arabic</label>
+
+                     
                 </div>
+                <button type="submit" id="submit-button" >Translate</button>
             </div>
-            <button type="submit" id="submit-button" >Translate</button>
-            <div class="chat-box three">
-                <label for="output">Translated Text</label>
-                <input type="text" placeholder="Bonjour, comment ça va" id="output" readonly/>
+           
+      
             </div>
         </form>
+        </div>
+        <div id="block-two">
+                <h2 >Text To Translate &#128071</h2>
+                <p id="user-text">Hello, how are you?</p>
+                <h2>Translated Text &#128071</h2>
+                <p id="output">Text added here after </p>
+                <button id="prev">Start Over</button>
+        </div>
         <script src="index.js" type="module"></script>
     </body>
 </html>
