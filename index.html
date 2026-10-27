@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <title>PollyGlot</title>
     </head>
     <body>
         <!-- Your HTML here -->
@@ -13,13 +14,30 @@
                     <subtitle>Perfect Translation Every Time </subtitle>
                 </div>
             </div>
+            <form >
             <div class="chat-box one">
                 <label for="user-input">Text To Translate</label>
                 <input type="text" placeholder="Hello, how are you " id="user-input"/>
                 
             </div>
-            <div class="chat-box two"></div>
-        </div>
+            <div class="chat-box two">
+                <p >Select Language</p>
+                  <input type="radio" id="french" name="language" value="French" checked>
+                  <label for="french">French</label><br>
+
+                    <input type="radio" id="korean" name="language" value="Korean">
+                    <label for="korean">Korean</label><br>
+
+                    <input type="radio" id="arabic" name="language" value="Arabic">
+                    <label for="arabic">Arabic</label>
+            </div>
+            <button type="submit" id="submit-button" >Translate</button>
+            <div class="chat-box three">
+                <label for="output">Translated Text</label>
+                <input type="text" placeholder="Bonjour, comment ça va" id="output" readonly/>
+            <button id="copy-button">Start Over</button>
+            </div>
+        </form>
         <script src="index.js" type="module"></script>
     </body>
 </html>
