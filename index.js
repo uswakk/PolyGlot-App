@@ -1,5 +1,8 @@
 const submitButton = document.getElementById("submit-button");
 
-submitButton.addEventListener("click", ()=>{
-    console.log("Submit button clicked");
-});
+function handleSubmit(event) {
+    event.preventDefault();
+    console.log("Translation submitted!");
+}
+
+submitButton.addEventListener("submit", handleSubmit);

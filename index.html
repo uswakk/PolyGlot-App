@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <title>PollyGlot</title>
     </head>
@@ -16,12 +19,13 @@
             </div>
             <form >
             <div class="chat-box one">
-                <label for="user-input">Text To Translate</label>
+                <label for="user-input">Text To Translate &#128071</label>
                 <input type="text" placeholder="Hello, how are you " id="user-input"/>
                 
             </div>
             <div class="chat-box two">
-                <p >Select Language</p>
+                <p >Select Language &#128071</p>
+                <div class="language-options">
                   <input type="radio" id="french" name="language" value="French" checked>
                   <label for="french">French</label><br>
 
@@ -30,12 +34,12 @@
 
                     <input type="radio" id="arabic" name="language" value="Arabic">
                     <label for="arabic">Arabic</label>
+                </div>
             </div>
             <button type="submit" id="submit-button" >Translate</button>
             <div class="chat-box three">
                 <label for="output">Translated Text</label>
                 <input type="text" placeholder="Bonjour, comment ça va" id="output" readonly/>
-            <button id="copy-button">Start Over</button>
             </div>
         </form>
         <script src="index.js" type="module"></script>

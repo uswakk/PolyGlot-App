@@ -45,10 +45,50 @@ form
     border-radius: 15px;
     margin: 30px;
     text-align: center;
+    font-family:'Poppins','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #035A9D;
+    font-weight: 700;
 }
 
+input[type=text]
+{
+    color: #333333;
+    padding: 7px; 
+
+}
+
+
+.chat-box{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+p, .one label
+{
+    margin-bottom: 10px;
+}
 .three
 {
     display: none;
 
+}
+
+button
+{
+    background-color: #035A9D;
+    border: 0px;
+    border-radius: 6px;
+    width: 200px;
+    height:30px;
+    color: white;
+    margin: 10px;
+    font-weight: 600;
+
+
+}
+
+.two label
+{
+    color: #333333;
 }
